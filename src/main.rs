@@ -1,21 +1,8 @@
 use macroquad::prelude::*;
 
-
-fn window_conf() -> Conf {
-    Conf {
-        window_title: "WASM TEST".to_string(),
-        window_width: 800,
-        window_height: 600,
-        // high_dpi: todo!(),
-        fullscreen: false,
-        // sample_count: todo!(),
-        window_resizable: true,
-        // icon: todo!(),
-        // platform: todo!(),
-        ..Default::default()
-    }
+fn window_conf() -> Conf { 
+    Conf::default()
 }
-
 
 #[macroquad::main(window_conf)]
 async fn main() {
